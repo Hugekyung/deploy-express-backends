@@ -14,6 +14,8 @@ mongoose
   .connect("mongodb+srv://<userId>:<password>@cluster0.nfefn.mongodb.net/<collections>")
   .then(async () => {
     console.log("connected DB!")
+    
+    //임시로 데이터 넣고 시작하기
     try {
       const test1 = new User({
         username: "elice3",
